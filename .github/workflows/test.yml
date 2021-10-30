@@ -1,14 +1,22 @@
 name: test
 on:
-  - push
-  - pull_request
+  # Trigger the workflow on push or pull request,
+  # but only for the main and develop branch
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
 jobs:
   linux:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version:
-          - 14.17.0
+          - 14.X
           - 16.x
     steps:
       - uses: actions/checkout@v2
