@@ -1,7 +1,7 @@
 {
-  "name": "adonis5-hcaptcha",
+  "name": "adonisJS-hcaptcha",
   "version": "0.0.1",
-  "description": "hCaptcha for AdonisJS",
+  "description": "A middleware for AdonisJS to keep your web applications secure from bots using hCaptcha",
   "main": "./build/Providers/HcaptchaProvider.js",
   "scripts": {
     "pretest": "npm run lint",
@@ -97,9 +97,9 @@
       "HCAPTCHA_SECRET_KEY": "",
       "HCAPTCHA_SITE_KEY": ""
     },
-    "types": "adonis5-hcaptcha",
+    "types": "adonisJS-hcaptcha",
     "providers": [
-      "adonis5-hcaptcha"
+      "adonisJS-hcaptcha"
     ]
   }
 }
