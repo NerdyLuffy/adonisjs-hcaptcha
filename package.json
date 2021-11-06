@@ -1,0 +1,105 @@
+{
+  "name": "adonis5-hcaptcha",
+  "version": "0.0.1",
+  "description": "hCaptcha for AdonisJS",
+  "main": "./build/Providers/HcaptchaProvider.js",
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "node japaFile.js",
+    "mrm": "mrm --preset=@adonisjs/mrm-preset",
+    "clean": "del build",
+    "compile": "npm run lint && npm run clean && tsc && npm run copyfiles",
+    "build": "npm run compile",
+    "copyfiles": "copyfiles \"templates/**/*.txt\" build",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint . --ext=.ts",
+    "format": "prettier --write .",
+    "commit": "git-cz",
+    "release": "np",
+    "version": "npm run build",
+    "sync-labels": "github-label-sync --labels ./node_modules/@adonisjs/mrm-preset/gh-labels.json NerdyLuffy/adonis5-hcaptcha",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NerdyLuffy/adonis5-hcaptcha.git"
+  },
+  "keywords": [
+    "adonis",
+    "adonisjs",
+    "adonis-framework",
+    "hcaptcha",
+    "adonis-hcaptcha"
+  ],
+  "types": "./build/adonis-typings/index.d.ts",
+  "author": "Yash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NerdyLuffy/adonis5-hcaptcha/issues"
+  },
+  "homepage": "https://github.com/NerdyLuffy/adonis5-hcaptcha#readme",
+  "devDependencies": {
+    "@adonisjs/core": "^5.4.0",
+    "@adonisjs/mrm-preset": "^4.1.2",
+    "@adonisjs/require-ts": "^2.0.8",
+    "@adonisjs/sink": "^5.1.6",
+    "@types/chance": "^1.1.3",
+    "@types/node": "^16.11.6",
+    "chance": "^1.1.8",
+    "commitizen": "^4.2.4",
+    "copyfiles": "^2.4.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "del-cli": "^4.0.1",
+    "doctoc": "^2.1.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-adonis": "^2.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "github-label-sync": "^2.0.2",
+    "husky": "^7.0.0",
+    "japa": "^4.0.0",
+    "mrm": "^3.0.10",
+    "nock": "^13.1.4",
+    "np": "^7.5.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  },
+  "files": [
+    "build/adonis-typings",
+    "build/Providers",
+    "build/templates",
+    "build/instructions.js"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "np": {
+    "contents": ".",
+    "anyBranch": false
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "node ./node_modules/@adonisjs/mrm-preset/validateCommit/conventional/validate.js"
+    }
+  },
+  "dependencies": {},
+  "adonisjs": {
+    "instructions": "./build/instructions.js",
+    "templates": {
+      "config": {
+        "src": "config/hcaptcha.txt",
+        "dest": "hcaptcha.ts"
+      }
+    },
+    "env": {
+      "HCAPTCHA_SECRET_KEY": "",
+      "HCAPTCHA_SITE_KEY": ""
+    },
+    "types": "adonis5-hcaptcha",
+    "providers": [
+      "adonis5-hcaptcha"
+    ]
+  }
+}
