@@ -9,8 +9,6 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # adonis5-hcaptcha
-> Stop more bots. Start protecting user privacy. hCaptcha for Adonis
-
 [![github-actions-image]][github-actions-url] [![npm-image]][npm-url] [![license-image]][license-url] [![typescript-image]][typescript-url]
 
 A package to keep your AdonisJS applications safe from bots, spam and protect your user privacy
