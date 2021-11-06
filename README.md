@@ -74,8 +74,8 @@ The new middleware will check for `h-captcha-response` field in request input
 
 
 
-[github-actions-image]: https://github.com/adonis5-hcaptcha/actions/workflows/test.yml
-[github-actions-url]: https://img.shields.io/github/workflow/status/adonis5-hcaptcha/test?style=for-the-badge "github-actions"
+[github-actions-image]: https://img.shields.io/github/workflow/status/NerdyLuffy/adonisJS-hcaptcha/test?style=for-the-badge
+[github-actions-url]: https://github.com/NerdyLuffy/adonisJS-hcaptcha/actions/workflows/test.yml "github-actions"
 
 [npm-image]: https://img.shields.io/npm/v/adonis5-hcaptcha.svg?style=for-the-badge&logo=npm
 [npm-url]: https://npmjs.org/package/adonis5-hcaptcha "npm"
