@@ -3,21 +3,17 @@ import { Exception } from '@adonisjs/core/build/standalone'
 import HcaptchaValidator from '@ioc:Hcaptcha'
 
 /**
- * ReCAPTCHA middleware is meant to check recaptcha response
- * when POST/PUT requests
- *
- * You must register this middleware inside `start/kernel.ts` file under the list
+ * Please register this middleware inside `start/kernel.ts` file under the list
  * of named middleware
  */
+
 export default class Hcaptcha {
   public async handle(ctx: HttpContextContract, next: () => Promise<void>): Promise<void> {
-    HcaptchaValidator.test()
+    const getHcaptchaTokenFromRequest = ctx.request.input('h-captcha-response')
 
-    const getHcaptchaTokenFromResponse = ctx.request.input('h-captcha-response')
     try {
-      ctx.hcaptcha = await HcaptchaValidator.verifyToken(getHcaptchaTokenFromResponse)
+      ctx.hcaptcha = await HcaptchaValidator.verifyToken(getHcaptchaTokenFromRequest)
     } catch (error) {
-      console.warn('Error in the package')
       throw new Exception('invalid-input-response', 400, 'H_CAPTCHA')
     }
 

@@ -1,3 +1,12 @@
+/*
+ * adonisJS-hcaptcha
+ *
+ * (c) Yash K <yash@tuta.io>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 import { ApplicationContract } from '@ioc:Adonis/Core/Application'
 import { HcaptchaConfig } from '@ioc:Hcaptcha'
 import HcaptchaValidator from '../src/Hcaptcha'

@@ -2,16 +2,25 @@ import Env from '@ioc:Adonis/Core/Env'
 import { HcaptchaConfig } from '@ioc:Hcaptcha'
 
 const hcaptchaConfig: HcaptchaConfig = {
+    /*
+  |--------------------------------------------------------------------------
+  | Site Key
+  |--------------------------------------------------------------------------
+  |
+  | Your public API site key
+  |
+  */
+  siteKey: Env.get('HCAPTCHA_SITE_KEY'),
+
   /*
   |--------------------------------------------------------------------------
   | Secret Key
   |--------------------------------------------------------------------------
   |
-  | The shared key between your site and reCAPTCHA
-  | * Don`t tell it to anyone
+  | Your Secret Key provided in the hcaptcha dashboard 
+  | * Don`t tell or share it with anyone
   |
   */
-  secretKey: Env.get('secretKey'),
-  siteKey: Env.get('siteKey'),
+  secretKey: Env.get('HCAPTCHA_SECRET_KEY'),
 }
 export default hcaptchaConfig

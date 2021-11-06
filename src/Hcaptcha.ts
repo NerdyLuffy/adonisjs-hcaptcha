@@ -1,3 +1,12 @@
+/*
+ * adonisJS-hcaptcha
+ *
+ * (c) Yash K <yash@tuta.io>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 import { HcaptchaConfig, HcaptchaResponse, HcaptchaError } from '@ioc:Hcaptcha'
 import * as https from 'https'
 import { URLSearchParams } from 'url'
@@ -23,17 +32,13 @@ export default class HcaptchaValidator {
     this.config = config
   }
 
-  public test(): void {
-    console.warn('Test function')
-  }
-
   public async verifyToken(token: string, remoteIp?: string): Promise<HcaptchaResponse> {
     const {
       success,
       'challenge_ts': challengeTimestamp,
       hostname,
       credit,
-      'error-codes': rawErrorCodes,
+      'error-codes': errorCodes,
       score,
       'score_reason': scoreReason,
     } = await this.hcaptchaClient(this.config.secretKey, token, this.config.siteKey, remoteIp)
@@ -43,7 +48,7 @@ export default class HcaptchaValidator {
       challengeTimestamp,
       hostname,
       credit,
-      errorCodes: rawErrorCodes as HcaptchaError[] | undefined,
+      errorCodes: errorCodes as HcaptchaError[] | undefined,
       score,
       scoreReason,
     }

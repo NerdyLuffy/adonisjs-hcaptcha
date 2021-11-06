@@ -1,3 +1,12 @@
+/*
+ * adonisJS-hcaptcha
+ *
+ * (c) Yash K <yash@tuta.io>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 declare module '@ioc:Hcaptcha' {
   export interface HcaptchaConfig {
     secretKey: string
@@ -47,6 +56,5 @@ declare module '@ioc:Hcaptcha' {
     | 'not-using-dummy-secret'
     | 'sitekey-secret-mismatch'
 
-  export function test(): void
   export function verifyToken(token: string, remoteIp?: string): Promise<HcaptchaResponse>
 }
