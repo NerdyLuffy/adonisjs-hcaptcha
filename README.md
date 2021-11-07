@@ -74,10 +74,23 @@ Server.middleware.registerNamed({
 ```ts
 Route.post('login', 'UserController.login').middleware('hcaptcha')
 ```
-
 The new middleware will check for `h-captcha-response` field in [request input](https://docs.adonisjs.com/guides/request#requestinput)
 
 > `h-captcha-response` field will contain the unique one time non repeating token which will be validated with hCaptcha to make sure its not a bot
+
+<h3> Step 6: Check response in your controller </h3>
+
+```ts
+export default class UsersController {
+  public async index({ hcaptcha }: HttpContextContract) {
+    if (hcaptcha.success) {
+      // Do some action
+    }
+    // Throw error
+  }
+}
+
+```
 
 [github-actions-image]: https://img.shields.io/github/workflow/status/NerdyLuffy/adonisjs-hcaptcha/test?style=for-the-badge
 [github-actions-url]: https://github.com/NerdyLuffy/adonisjs-hcaptcha/actions/workflows/test.yml "github-actions"
