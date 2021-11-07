@@ -55,8 +55,8 @@ import Env from '@ioc:Adonis/Core/Env'
 
 export default Env.rules({
   // ....
-  RECAPTCHA_SITE_KEY: Env.schema.string(),
-  RECAPTCHA_SECRET_KEY: Env.schema.string(),
+  HCAPTCHA_SITE_KEY: Env.schema.string(),
+  HCAPTCHA_SECRET_KEY: Env.schema.string(),
 })
 ```
 
