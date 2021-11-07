@@ -1,5 +1,5 @@
 {
-  "name": "adonisJS-hcaptcha",
+  "name": "adonisjs-hcaptcha",
   "version": "0.0.1",
   "description": "A middleware for AdonisJS to keep your web applications secure from bots using hCaptcha",
   "main": "./build/Providers/HcaptchaProvider.js",

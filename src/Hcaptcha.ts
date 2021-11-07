@@ -1,5 +1,5 @@
 /*
- * adonisJS-hcaptcha
+ * adonisjs-hcaptcha
  *
  * (c) Yash K <yash@tuta.io>
  *
