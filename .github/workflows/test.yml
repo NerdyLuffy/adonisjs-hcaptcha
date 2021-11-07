@@ -6,12 +6,10 @@ on:
     branches:
       - main
       - develop
-      - init
   pull_request:
     branches:
       - main
       - develop
-      - init
 jobs:
   linux:
     runs-on: ubuntu-latest
