@@ -13,7 +13,7 @@
 
 <div align="center">
 
-[![github-actions-image]][github-actions-url] [![npm-image]][npm-url] [![license-image]][license-url] [![typescript-image]][typescript-url]
+[![github-actions-image]][github-actions-url] [![npm-image]][npm-url] [![license-image]][license-url] [![typescript-image]][typescript-url] [![synk-image]][synk-url]
 
  </div>
 
@@ -82,11 +82,14 @@ The new middleware will check for `h-captcha-response` field in [request input](
 [github-actions-image]: https://img.shields.io/github/workflow/status/NerdyLuffy/adonisjs-hcaptcha/test?style=for-the-badge
 [github-actions-url]: https://github.com/NerdyLuffy/adonisjs-hcaptcha/actions/workflows/test.yml "github-actions"
 
-[npm-image]: https://img.shields.io/npm/v/adonis5-hcaptcha.svg?style=for-the-badge&logo=npm
+[npm-image]: https://img.shields.io/npm/v/adonisjs-hcaptcha.svg?style=for-the-badge&logo=npm
 [npm-url]: https://npmjs.org/package/adonis5-hcaptcha "npm"
 
-[license-image]: https://img.shields.io/npm/l/adonis5-hcaptcha?color=blueviolet&style=for-the-badge
+[license-image]: https://img.shields.io/npm/l/adonisjs-hcaptcha?color=blueviolet&style=for-the-badge
 [license-url]: LICENSE.md "license"
 
 [typescript-image]: https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript
 [typescript-url]:  "typescript"
+
+[synk-image]: https://img.shields.io/snyk/vulnerabilities/github/NerdyLuffy/adonisjs-hcaptcha?style=for-the-badge
+[synk-url]: https://snyk.io/test/github/NerdyLuffy/adonisjs-hcaptcha?targetFile=package.json "synk"
