@@ -31,7 +31,6 @@ npm run lint
 ## Other notes
 
 - Do not change version number inside the `package.json` file.
-- Do not update `CHANGELOG.md` file.
 
 ## Need help?
 
