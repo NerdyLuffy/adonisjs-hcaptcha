@@ -15,7 +15,7 @@ declare module '@ioc:Hcaptcha' {
 
   export interface HcaptchaResponse {
     /**
-     * True when the token is valid meet security criteria specified in the siteKey
+     * True when the token is valid and meets security criteria specified in the siteKey
      */
     readonly success: boolean
 

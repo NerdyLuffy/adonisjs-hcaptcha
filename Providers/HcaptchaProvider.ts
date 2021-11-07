@@ -11,7 +11,7 @@ import { ApplicationContract } from '@ioc:Adonis/Core/Application'
 import { HcaptchaConfig } from '@ioc:Hcaptcha'
 import HcaptchaValidator from '../src/Hcaptcha'
 
-export default class MongoProvider {
+export default class HcaptchaProvider {
   public static needsApplication = true
 
   constructor(protected application: ApplicationContract) {

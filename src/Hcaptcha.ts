@@ -74,7 +74,8 @@ export default class HcaptchaValidator {
 
     /**
      * Setting up the options and hCaptcha accepts data
-     * in url encode format
+     * in the form url encode format
+     * additional information at https://docs.hcaptcha.com/#verify-the-user-response-server-side
      */
 
     const options: https.RequestOptions = {
@@ -103,7 +104,6 @@ export default class HcaptchaValidator {
       })
 
       req.on('error', (err) => {
-        console.warn('Reject', err)
         reject(err)
       })
 

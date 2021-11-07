@@ -17,8 +17,8 @@ const hcaptchaConfig: HcaptchaConfig = {
   | Secret Key
   |--------------------------------------------------------------------------
   |
-  | Your Secret Key provided in the hcaptcha dashboard 
-  | * Don`t tell or share it with anyone
+  | Your Secret Key 
+  | * Do not share your secretKey with anyone
   |
   */
   secretKey: Env.get('HCAPTCHA_SECRET_KEY'),
