@@ -17,12 +17,12 @@
     "commit": "git-cz",
     "release": "np",
     "version": "npm run build",
-    "sync-labels": "github-label-sync --labels ./node_modules/@adonisjs/mrm-preset/gh-labels.json NerdyLuffy/adonis5-hcaptcha",
+    "sync-labels": "github-label-sync --labels ./node_modules/@adonisjs/mrm-preset/gh-labels.json NerdyLuffy/adonisjs-hcaptcha",
     "prepare": "husky install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NerdyLuffy/adonis5-hcaptcha.git"
+    "url": "git+https://github.com/NerdyLuffy/adonisjs-hcaptcha.git"
   },
   "keywords": [
     "adonis",
@@ -35,9 +35,9 @@
   "author": "Yash",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NerdyLuffy/adonis5-hcaptcha/issues"
+    "url": "https://github.com/NerdyLuffy/adonisjs-hcaptcha/issues"
   },
-  "homepage": "https://github.com/NerdyLuffy/adonis5-hcaptcha#readme",
+  "homepage": "https://github.com/NerdyLuffy/adonisjs-hcaptcha#readme",
   "devDependencies": {
     "@adonisjs/core": "^5.4.0",
     "@adonisjs/mrm-preset": "^4.1.2",
