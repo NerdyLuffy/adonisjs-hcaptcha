@@ -68,7 +68,8 @@
     "build/adonis-typings",
     "build/Providers",
     "build/templates",
-    "build/instructions.js"
+    "build/instructions.js",
+    "build/src"
   ],
   "config": {
     "commitizen": {
