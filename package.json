@@ -98,7 +98,7 @@
       "HCAPTCHA_SECRET_KEY": "",
       "HCAPTCHA_SITE_KEY": ""
     },
-    "types": "adonisJS-hcaptcha",
+    "types": "adonisjs-hcaptcha",
     "providers": [
       "adonisJS-hcaptcha"
     ]
