@@ -100,7 +100,7 @@
     },
     "types": "adonisjs-hcaptcha",
     "providers": [
-      "adonisJS-hcaptcha"
+      "adonisjs-hcaptcha"
     ]
   }
 }
