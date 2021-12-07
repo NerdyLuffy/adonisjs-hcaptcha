@@ -13,7 +13,7 @@
 
 <div align="center">
 
-[![github-actions-image]][github-actions-url] [![npm-image]][npm-url] [![license-image]][license-url] [![typescript-image]][typescript-url] [![synk-image]][synk-url]
+[![github-actions-image]][github-actions-url] [![npm-image]][npm-url] [![license-image]][license-url] ![][typescript-image] [![synk-image]][synk-url]
 
  </div>
 
