@@ -101,5 +101,8 @@
     "providers": [
       "adonisjs-hcaptcha"
     ]
+  },
+  "volta": {
+    "node": "18.16.0"
   }
 }
